@@ -1,11 +1,23 @@
 .App {
   text-align: center;
+  
+}
+html { 
+
+}
+body{
+  /* background-image: url("./images/background.jpeg");
+  background-repeat: no-repeat; */
+  background: url("./images/background.jpeg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .logo {
 
   width: 18%;
-
   pointer-events: none;
   margin-bottom:0px;
   float: right;
@@ -20,11 +32,15 @@
   height: 100%;
 }
 .head{
-  background-image: url("./images/background.jpeg");
- 
+  /* background-image: url("./images/background.jpeg");
+ background-repeat: no-repeat; */
   width: 100%;
-  height: 100px;
+  height: 150px;
   margin: 0 auto;
+}
+.navfont{
+  font-family: 'Amiri-Bold';
+  font-size: large;
 }
 .jumbotron{
 
@@ -36,21 +52,25 @@
 }
 .center{
  
-  border-style: solid;
-  border-color: red;
+ background-color:#e9ecef;
+ margin:0 auto;
+ height: 100%;
+ width: 70%;
+ 
 }
-.caro{
-  width:30%;
-  height: 300px;
+.message{
   float: left;
+}
 
-  /* background-color: black; */
-  /* margin: 0 auto; */
-}
 .d{
-  width:500px;
+  width:350px;
   height: 300px;
+  
 }
+.Carousel{
+  float:right;
+}
+
 /* @media (prefers-reduced-motion: no-preference) {
   .logo {
     animation: App-logo-spin infinite 20s linear;

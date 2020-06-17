@@ -1,4 +1,5 @@
 import React from 'react';
+import { Nav,Navbar,Form,FormControl } from 'react-bootstrap';
 import logo from './images/logo1.png';
 import safalogo from './images/safalogoo.png';
 import st1 from './images/1.JPG';
@@ -12,6 +13,7 @@ import th8 from './images/8.JPG';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Jumbotron,Carousel,Button} from 'react-bootstrap'
 import './App.css';
+// import Slide from 'CarouselPage';
 
 function App() {
   return (
@@ -20,14 +22,20 @@ function App() {
      <img className="logo" src={logo}/>
      <img className="safalogo" src={safalogo}/>
      </div>
+     <Navbar bg="dark"   variant="dark">
+    <Nav className="mr-auto" className="container-fluid">
+    <Nav.Link className="ml-auto" className="navfont" href="">عنا</Nav.Link>
+      <Nav.Link className="ml-auto" className="navfont" href="">معرض الصور</Nav.Link>
+      <Nav.Link className="ml-auto" className="navfont" href="">الموقع</Nav.Link>
+      <Nav.Link className="ml-auto" className="navfont" href=""> جدول الفعاليات</Nav.Link>
+      <Nav.Link className="ml-auto" className="navfont" href="">الرئيسية</Nav.Link>
+    </Nav>
+    
+  </Navbar> 
+
+
       <div className='center'>
-      <Jumbotron>
-<h1>رسالتنا</h1>
-<p>
- متعة المعرفة تؤمن بأن السعادة توجد في الكتب و تسعى ليكون يوم الطفل يحمل معان جميلة من خلال المعرفة
-</p>
-</Jumbotron> 
-      <div class="caro">
+ 
       <Carousel>
 <Carousel.Item>
 <img
@@ -96,7 +104,8 @@ alt="Third slide"
 </Carousel.Item>
 </Carousel>
      
- </div> 
+ 
+ 
 
 </div>
    </div>
